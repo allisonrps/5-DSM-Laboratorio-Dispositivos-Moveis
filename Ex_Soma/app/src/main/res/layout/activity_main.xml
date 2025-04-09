@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numero01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="237dp"
+        android:ems="10"
+        android:hint="Primeiro Número"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numero02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Segundo Número"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/numero01"
+        app:layout_constraintTop_toBottomOf="@+id/numero01" />
+
+    <Button
+        android:id="@+id/buttonSomar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="44dp"
+        android:text="SOMAR"
+        app:layout_constraintStart_toStartOf="@+id/numero02"
+        app:layout_constraintTop_toBottomOf="@+id/numero02" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="10dp"
+        android:text="RESULTADO"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSomar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSomar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
